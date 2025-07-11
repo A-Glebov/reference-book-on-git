@@ -19,3 +19,12 @@
 - *git commit -m* 'Сообщение'* - добавляем коммит  
 - *git log* - история коммитов  
 ----------------------------------------------
+
+```mermaid
+graph LR;
+untracked -- "git add" --> staged;
+staged -- "git commit -m"        --> tracked/comitted;
+
+%% стрелка без текста для примера:
+A --> B;
+```
